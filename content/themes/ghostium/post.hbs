@@ -1,9 +1,9 @@
 {{!< default}}
-
 <section class="wrapper wrapper-post">
   <div class="wrapper-container">
     <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post {{post_class}}">
       {{#post}}
+        {{#contentFor "metaTitle"}}{{title}} - {{@blog.title}}{{/contentFor}}
         <section class="post-container">
           <header class="post-header">
             <ul class="post-meta-list">

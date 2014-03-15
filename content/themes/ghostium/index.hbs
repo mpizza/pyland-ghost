@@ -1,5 +1,6 @@
 {{!< default}}
 
+{{#contentFor "metaTitle"}}{{@blog.title}}{{/contentFor}}
 <aside role="banner" class="cover">
   <div {{#if @blog.cover}}data-load-image="{{@blog.cover}}"{{/if}} class="cover-image"></div>
   <div class="cover-container">
