@@ -1,9 +1,18 @@
 {{!< default}}
+{{#post}}
+  {{#contentFor "metaBlock"}}
+    <title>{{title}} - {{@blog.title}}</title>
+    <meta name="twitter:title" content="{{title}} - {{@blog.title}}">
+    <meta name="twitter:description" content="{{excerpt characters='100'}}">
+    <meta property="og:title" content="{{title}} - {{@blog.title}}">
+    <meta property="og:description" content="{{excerpt characters='100'}}">
+    <meta property="og:image" content="{{title}} - {{@blog.title}}">
+  {{/contentFor}}
+{{/post}}
 <section class="wrapper wrapper-post">
   <div class="wrapper-container">
     <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post {{post_class}}">
       {{#post}}
-        {{#contentFor "metaTitle"}}{{title}} - {{@blog.title}}{{/contentFor}}
         <section class="post-container">
           <header class="post-header">
             <ul class="post-meta-list">
