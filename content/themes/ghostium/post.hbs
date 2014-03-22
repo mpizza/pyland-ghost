@@ -6,7 +6,9 @@
     <meta name="twitter:description" content="{{excerpt characters='100'}}">
     <meta property="og:title" content="{{title}} - {{@blog.title}}">
     <meta property="og:description" content="{{excerpt characters='100'}}">
-    <meta property="og:image" content="{{title}} - {{@blog.title}}">
+    {{#if tags}}
+    <meta name="keywords" content="{{tags separator=','}}">
+    {{/if}}
   {{/contentFor}}
 {{/post}}
 <section class="wrapper wrapper-post">
