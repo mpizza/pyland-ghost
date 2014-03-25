@@ -1,3 +1,19 @@
 #about {
 	visibility: hidden;
 }
+@media only screen and (max-width:767px){
+	.cover {
+		min-height: 200px;
+	}
+	.post-item-excerpt {
+		display: none;
+	}
+
+	li.keywordsbox {
+		display: none;
+	}
+
+	li.commentbox {
+		display: none;
+	}
+}
